@@ -1,5 +1,7 @@
 # Challenge: Comprehensive Deal Management API with Investment and Pricing Plan
 
+_Keep in mind this is an over-simplified part of the product that we've built at Odin_ 😄
+
 # Problem Statement:
 
 Your task is to develop a robust API for handling investment deals, involving calculation based on a pricing plan.
