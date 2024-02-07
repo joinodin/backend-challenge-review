@@ -2,6 +2,8 @@
 
 _Keep in mind this is an over-simplified part of the product that we've built at Odin_ 😄
 
+_Please, reach out in case you have any question!_
+
 # Problem Statement:
 
 Your task is to develop a robust API for handling investment deals, involving calculation based on a pricing plan.
