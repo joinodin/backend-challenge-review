@@ -32,15 +32,15 @@ An investment is characterised by:
 - **Amount**: A required field specifying the invested amount, Note: Must be in the same currency as the deal.
 - **Investor Email**: A required unique reference used to identify the investor for each deal.
 
-To fulfil the functionality requirements for deal management API, the following HTTP handlers are expected (API names can be adapted, feel free to use GraphQL as well):
+To fulfil the functionality requirements for deal management API, the following behaviour are expected to be implemented behind an HTTP server (feel free to use REST/GraphQL/whatever):
 
-1. **`GET /deals`**: Retrieve a list of deals filtered by status.
-2. **`GET /deals/{id}`**: Retrieve details of a specific deal by its ID.
-3. **`POST /deals`**: Create a new **draft** deal.
-4. **`PATCH /deals`**: Add/change data of a **draft** deal.
-5. **`PUT /deals/{id}/publish`**: Move a draft deal to **live** status. Once live, the information cannot be modified, and investors can begin making investments.
-6. **`POST /deals/{id}/invest`**: Invest in a deal.
-7. **`PUT /deals/{id}/close`**: Move a draft deal to **closed** status. This endpoint calculates and exposes the net investment amount for each investor, considering the price plan (% fee, floor, cap), and associated fees. It also stores the remaining allocation amount after each investment, net of the price plan, in the deal's details.
+1. Retrieve a list of deals filtered by status.
+2. Retrieve details of a specific deal by its ID.
+3. Create a new **draft** deal.
+4. Add/change data of a **draft** deal.
+5. Move a draft deal to **live** status. Once live, the information cannot be modified, and investors can begin making investments.
+6. Invest in a deal.
+7. Move a draft deal to **closed** status. This endpoint calculates and exposes the net investment amount for each investor, considering the price plan (% fee, floor, cap), and associated fees. It also stores the remaining allocation amount after each investment, net of the price plan, in the deal's details.
 
 # Expectations:
 
